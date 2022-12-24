@@ -8,6 +8,12 @@ public class ThirdPersonController : MonoBehaviour
     [SerializeField] private Animator playerAnimator;
 
     [SerializeField] private VariableJoystick joystick;
+    [SerializeField] private SprintButton sprintButton;
+
+    private void Start()
+    {
+        sprintButton = joystick.GetComponent<SprinterButtonEnabled>().sprintButton;
+    }
 
     void FixedUpdate()
     {
@@ -31,8 +37,7 @@ public class ThirdPersonController : MonoBehaviour
 
     void RotateWithJoystickPosition()
     {
-        print(joystick.Direction);
-        transform.GetChild(0).localEulerAngles = new Vector3(transform.GetChild(0).localEulerAngles.x,
+       transform.GetChild(0).localEulerAngles = new Vector3(transform.GetChild(0).localEulerAngles.x,
             GetYRotationFromJoystick(),
             transform.GetChild(0).localEulerAngles.z);
     }

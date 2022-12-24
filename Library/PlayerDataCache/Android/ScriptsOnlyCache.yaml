@@ -2,10 +2,17 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - CameraMan
+    - SprinterButtonEnabled
     - ThirdPersonController
     - VariableJoystick
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -46,6 +53,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 64
       Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
     - Class: 74
       Script: {instanceID: 0}
     - Class: 81
@@ -63,21 +72,23 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1520}
+      Script: {instanceID: 1518}
     - Class: 114
-      Script: {instanceID: 2178}
+      Script: {instanceID: 2150}
     - Class: 114
-      Script: {instanceID: 2626}
+      Script: {instanceID: 2584}
     - Class: 114
-      Script: {instanceID: 2852}
+      Script: {instanceID: 2798}
     - Class: 114
-      Script: {instanceID: 5300}
+      Script: {instanceID: 4306}
     - Class: 114
-      Script: {instanceID: 5884}
+      Script: {instanceID: 5154}
     - Class: 114
-      Script: {instanceID: 6382}
+      Script: {instanceID: 5718}
     - Class: 114
-      Script: {instanceID: 8156}
+      Script: {instanceID: 6200}
+    - Class: 114
+      Script: {instanceID: 7932}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 136
@@ -499,6 +510,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SubMeshUI
+  - hash:
+      serializedVersion: 2
+      Hash: 78d408b30b3fef6927e38a5f371b8d53
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SprinterButtonEnabled
   - hash:
       serializedVersion: 2
       Hash: fd68d84f33fad85aac38f2739c0ee270
@@ -928,4 +945,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/756sa/woods-gone/finalchoice.apk
+  playerPath: C:/Users/756sa/woods-gone-3d/woods-gone-3d.apk
